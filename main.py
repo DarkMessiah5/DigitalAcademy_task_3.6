@@ -48,8 +48,6 @@ def mat_designer(height: int):
         print((':X:' * stick_count).center(width, '*'))
 
 
-
-
 def main():
     name = input("Please enter your name: ")
     surname = input("Please enter your surname: ")
