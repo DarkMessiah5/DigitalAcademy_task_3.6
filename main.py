@@ -48,6 +48,16 @@ def mat_designer(height: int):
         print((':X:' * stick_count).center(width, '*'))
 
 
+def digit_multiplier(num: int):
+    digit = 0
+    res = 1
+    while num != 0:
+        digit = num % 10
+        num = num // 10
+        if digit != 0.0:
+            res *= digit
+    return res
+
 def main():
     name = input("Please enter your name: ")
     surname = input("Please enter your surname: ")
@@ -63,6 +73,9 @@ def main():
 
     height = int(input("Please enter mat's height: "))
     mat_designer(height)
+
+    num = int(input("Please enter number: "))
+    print("Result of digit multiplication: ", digit_multiplier(num))
 
 
 if __name__ == '__main__':
